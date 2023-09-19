@@ -1,3 +1,4 @@
+
 pipeline {
      agent any
   tools {
@@ -7,7 +8,7 @@ pipeline {
   stages {
     stage('pullscm') {
       steps {
-        git branch: 'main', credentialsId: 'github', url: 'git@github.com:sathishbob/functional-testing.git'
+        git branch: 'main', credentialsId: 'github', url: 'git@github.com:Gaurav1789/functional-testing.git'
       }
     }
     stage('execute test') {
